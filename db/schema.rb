@@ -88,7 +88,7 @@ ActiveRecord::Schema.define(version: 2021_10_26_044520) do
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer "payment_method"
+    t.integer "payment_method", default: 0
     t.string "address"
     t.string "postal_code"
     t.string "name"
